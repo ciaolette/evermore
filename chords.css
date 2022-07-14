@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+body{
+    margin: 0;
+    font-family: Poppins;
+    overflow-x: hidden;
+    --bright-red:#F3DBE7;
+    --font-color: #fff;
+    --side-nav:#C3CCE1;
+    --chords-bg: rgb(241, 241, 241);
+    --gray: rgb(156, 156, 156);
+    --circle:#c3c3d3;
+    --antiquewhite:#fffaf2;
+    --offwhite:#FFDFCC;
+    --steelblue: #C9CCD5;
+    --evermore:#fff7e9;
+    --brown:#7c4f32;
+    --red:#990000;
+   
+}
+.uke-nav{
+    background: linear-gradient(to right, rgba(184, 168, 255, 0.2), rgba(255, 160, 160, 0.3)), url(https://pbs.twimg.com/media/CfEYf3YXIAAQM-q.png) center/cover no-repeat;
+    height: 6rem;
+    margin-top: -1.5em;
+    width: 100%;
+}
+.uke-nav h1{
+    margin-top: -6rem;
+    position: absolute;
+    margin-left: 17rem;
+    padding-top: 13px;
+    color: var(--bright-red);
+}
+.taylor-nav{
+    background: linear-gradient(to bottom, var(--bright-red), var(--side-nav));
+    color: var(--font-color);
+    padding: 4.2rem;
+    text-align: center;
+    margin-top: -3px;
+    width: 100%;
+}
+.taylor-nav h1{
+    text-shadow: -4px 3px 2px var(--side-nav);
+ }
+a:link, a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  #menu{
+    background: var(--bright-red);
+    padding-top: 1.3em;
+    width: 6.2em;
+    text-align: center;
+    height: 3.1em;
+    position: fixed;
+    top: 0;
+    margin-left: -1.2em;  
+  }
+ #menu i{
+    color: white;
+    font-size: 2em;
+    padding-left: 40px;
+ }
+ ul li{
+    list-style: none;
+ }
+ .sidebar{
+    position: fixed;
+   margin-top: -14em;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background: var(--side-nav);
+    transition: all 0.2s ease-in-out;
+    z-index: 100;  
+}
+.sidebar.close{
+    width: 66px;
+}
+.sidebar li{
+    height: 50px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.sidebar .icon{
+    min-width: 60px;
+    border-radius: 6px;
+    height: 100%;
+    margin-left: -1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.nav-link{
+    margin-bottom: 3em;
+    margin-top: 1em;
+}
+.sidebar .text,
+.sidebar .icon{
+    color: var(--font-color);
+    transition: 0.5s;
+}
+.sidebar.close .text{
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.sidebar header{
+    position: relative;
+}
+.sidebar header .toggle{
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.sidebar .menu{
+    margin-top: 40px;
+}
+.sidebar li a{
+    list-style: none;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    text-decoration: none;
+}
+.menu-bar::-webkit-scrollbar{
+    display: none;
+}
+.chart{
+    background: var(--evermore);
+    width: 60rem;
+    margin-left: 13rem;
+    padding: 2em;
+    margin-top: 3em;
+    box-shadow: 0px 0px 10px 0px rgba(90, 89, 89, 0.3);
+    border: 1px solid rgb(215, 215, 215);
+}
+.chart h1{
+    text-align: center;
+    color: #990000;
+    font-size: 25px;
+   
+}
+.chart p{
+    border-bottom: 1px solid #5555;
+    color: #555;
+    font-size: 14px;
+    margin-left: 4em;
+   
+}
+.chart img{
+    width: 10em;
+    float: left;
+    transform: rotate(-15deg);
+    margin-left: -3.5em;
+    margin-top: -3.5em;
+    margin-right: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+}
+.redborder{
+    border-left: 4px double #ff9694;
+    height: 15.3em;
+    position: absolute;
+    margin-top: -6.5rem;
+}
+
+.icon:hover{
+    background: linear-gradient(to right,#ffedf6 50% ,#d0deff 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: 0.5s;
+}
+#active{
+    background: linear-gradient(to right,#ffedf6 50% ,#d0deff 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+#menu i:hover{
+    background: linear-gradient(to right, #86a9f8 ,#ffd9ec);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: 0.5s;
+  }
+  .text:hover{
+    background: linear-gradient(to right, #d0deff 50% ,#ffedf6 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: 0.5s;
+}
+.footer{
+    height: 15em;
+    width: 100em;
+    background: linear-gradient(to bottom,#ffedf6 ,#d0deff );
+    margin-left: 3px;
+    text-align: center;
+}
+.footer p{
+    position: absolute;
+    margin-left: 33em;
+    margin-top: 4em;
+    color: rgb(114, 114, 114);
+}
+
+/*FLIP*/
+.flipCard {
+    transition: 0.5s;
+     width: 240px;
+     height: 350px;
+     position: relative;
+     display: inline-flex;
+     margin-left: 11em;
+     margin-top: 3em;
+     border-radius: 10px;
+  }
+  .flipCard .card.flipped {
+    transform:rotatey(-180deg);
+    -webkit-transform:rotatey(-180deg); 
+  }
+  .flipCard .card {
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+    -moz-transform-style: preserve-3d;
+    -moz-transition: 0.5s;
+    -ms-transform-style: preserve-3d;
+    -ms-transition: 0.5s;
+    -o-transform-style: preserve-3d;
+    -o-transition: 0.5s;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+  }
+  .flipCard .card .side {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    box-sizing: border-box;
+    z-index: 2;
+    backface-visibility: hidden;  
+    -webkit-backface-visibility: hidden; 
+    box-shadow: 0 0 13px 0px rgba(100, 100, 100, 0.5);
+    overflow: hidden;
+  }
+  .flipCard .card .back {
+    background: white;
+    color: var(--red);
+    transform:rotatey(-180deg);
+    -webkit-transform:rotatey(-180deg);
+  }
+  
+  .flipCard .card .front {
+    text-align: center;
+    line-height: 160px;
+    background-color: var(--antiquewhite);
+    color: var(--red);
+    border-radius: 10px;
+  }
+  .flipCard .card .back {
+    background-color: var(--antiquewhite);
+    text-align: center;
+    color: var(--red);
+    font-size: 18px;
+    border-radius: 10px;
+  }
+  .side img{
+    width: 10em;
+    margin-left: -20px;
+    margin-top: 10px;
+  }
+  .side p{
+    margin-top: -5.5em;
+    font-size: 20px;
+    font-weight: 610;
+  }
+ .front p:hover{
+    color: #dd4031;
+    transition: 0.5s;
+ }
+ .back h2:hover{
+    color: #dd4031;
+    transition: 0.5s;
+ }
+  .back img{
+    width: 12em;
+    margin-left: 2.5px;
+    box-shadow: 0 0 13px 0px rgba(100, 100, 100, 0.5);
+  }
